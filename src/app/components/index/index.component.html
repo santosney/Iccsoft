@@ -1,0 +1,433 @@
+<header>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBaFjlYPPK40JTY1uUP1X7vHqcCJ1TNm68" async defer></script>
+</header>
+<div class="all">
+    <div class="nav">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../../../assets/Images/iccsoft.png" alt="">
+            </div>
+            <div class="menu-navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="home">ACCEUIL</a></li>
+                    <li class="nav-item"><a href="#about">A PROPOS</a></li>
+                    <li class="nav-item"><a href="#services">SERVICES</a></li>
+                    <li class="nav-item"><a href="#valeurs">VALEURS</a></li>
+                    <li class="nav-item"><a href="#parttner">PARTENAIRES</a></li>
+                    <!-- <li class="nav-item"><a href="#">TECHNOLOGIES</a></li> -->
+                    <li class="nav-item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="home" id="home">
+        <ngb-carousel>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <div class="inset">
+                        <img src="../../../assets/Images/laptop-2443052__340.webp" alt="">
+                        <div class="center">
+                            <!-- <img src="../../../assets/Images/bank_box.jpg" alt=""> -->
+                        </div>
+                        <div class="zone">
+                            <h1>
+                                International <br><br>
+                                Computer <br><br>
+                                Center <br><br>
+                                Software
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <div class="inset">
+                        <img src="../../../assets/Images/interieur-moderne-salon-vert-canape-blanc-mobilier-parquet-ancien_34259-155.webp" alt="">
+                        <div class="center">
+                            <img src="../../../assets/Images/bank_box.jpg" alt="">
+                        </div>
+                        <div class="zone">
+                            <h1>
+                                Salon ELoge 
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <div class="inset">
+                        <img src="../../../assets/Images/web-design-2906159__340.webp" alt="">
+                        <div class="center">
+                            <!-- <img src="../../../assets/Images/bank_box.jpg" alt=""> -->
+                        </div>
+                        <div class="zone">
+                            <h1>
+                                ICCSOFT
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-carousel> 
+    </div>
+    <br>
+    <div class="about" id="about">
+        <div class="header">
+            <h1>
+                <mat-icon><span class="material-symbols-outlined">
+                    arrow_forward
+                    </span></mat-icon>A propos de nous...
+            </h1>
+        </div>
+        <div class="conent">
+            <div class="image">
+                <img src="../../../assets/Images/iccsoftenbfref (1).jpg" alt="">
+            </div>
+            <div class="vertical-bar"></div>
+            <div class="paragraphe">
+                <p>
+                    <strong>ICCSOFT</strong> conçoit et développe des solutions logicielles complètes destinées 
+                    aux Etablissements financiers, Petites et Moyennes Entreprises et Administrations afin 
+                    d’améliorer leur performance à travers la mise en place des systèmes de gestions automatisés. 
+                     <button *ngIf="state_about == true" class="btn" (click)="openDialogAbout()" >En savoir plus <mat-icon><span class="material-symbols-outlined">
+                        arrow_downward
+                        </span></mat-icon></button>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="detail_about" *ngIf="state_about == true">
+        <strong>
+         nous sommes spécialisée dans :
+            </strong> 
+        <br><br><br><br>
+        <ul>
+            <li style="--i:10;" class="list-item">
+                <a href=""><mat-icon><span class="material-symbols-outlined">
+                    label_important
+                    </span></mat-icon> l’édition des Logiciels de gestion et de finance</a>
+            </li>
+            <li style="--i:9;" class="list-item">
+                <a href="">
+                    <mat-icon><span class="material-symbols-outlined">
+                        label_important
+                        </span></mat-icon> le développement sur mesure des Logiciels de gestion et de finance</a>
+            </li>
+            <li style="--i:8;" class="list-item">
+                <a href="">
+                    <mat-icon><span class="material-symbols-outlined">
+                        label_important
+                        </span></mat-icon>la conception et la réalisation des sites Web</a>
+            </li>
+            <li style="--i:7;" class="list-item">
+                <a href=""> 
+                    <mat-icon><span class="material-symbols-outlined">
+                        label_important
+                        </span></mat-icon>le développement des Applications Internet</a>
+            </li>
+            <li style="--i:6;" class="list-item">
+                <a href="">
+                    <mat-icon><span class="material-symbols-outlined">
+                        label_important
+                        </span></mat-icon>la réservation des noms de domaine</a>
+            </li>
+            <li style="--i:5;" class="list-item">
+                <a href="">
+                    <mat-icon><span class="material-symbols-outlined">
+                        label_important
+                        </span></mat-icon>l’hébergement et le référencement des sites Web</a>
+            </li>
+            <li style="--i:4;" class="list-item"> 
+                <a href="">
+                    <mat-icon><span class="material-symbols-outlined">
+                        label_important
+                        </span></mat-icon>la mise en place des serveurs de messagerie</a>
+            </li>
+            <li style="--i:3;" class="list-item"> 
+                <a href=""> 
+                    <mat-icon><span class="material-symbols-outlined">
+                        label_important
+                        </span></mat-icon>le webmarketing</a>
+            </li>
+            <li style="--i:2;" class="list-item"> 
+                <a href="">
+                    <mat-icon><span class="material-symbols-outlined">
+                        label_important
+                        </span></mat-icon>la formation, l’installation et le câblage des réseaux informatiques</a>
+            </li>
+            <li style="--i:1;" class="list-item">
+                <a href="">
+                    <mat-icon><span class="material-symbols-outlined">
+                        label_important
+                        </span></mat-icon>la maintenance corrective et évolutive des parcs informatiques</a>
+            </li>
+            
+        </ul>
+    </div>
+    <br><br><br>
+    <mat-divider></mat-divider><br>
+    <div class="services" id="services">
+        <div class="header">
+            <h1>
+                <mat-icon><span class="material-symbols-outlined">
+                    arrow_forward
+                    </span></mat-icon>Nos services...
+                </h1>
+            <br><br>
+        </div>
+        <div class="card">
+            <div style="padding: 20px; text-align: center ; font-size: 12px;">
+                <h1>ELOGE BANK</h1>
+                <p>
+                    Dans le cadre de cette activité, le logiciel Eloge BANK conçu pour gérer les microfinances de toutes tailles en mode centralisé multi agences ou décentralisé constitue le principal produit pour ICCSOFT.
+                </p>
+                <button class="btn_card" (click)="openDialogEloge()">En savoir plus</button>
+            </div>
+            <div class="cover">
+                <div class="coverFront">
+                    <div>  
+                        <h2>Logiciel bancaire</h2>
+                        <img src="../../../assets/Images/erp_box.jpg" class="ssh_image" alt="">
+                        <mat-icon><span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined">
+                                preview
+                                </span>
+                            </span></mat-icon>
+                    </div>
+                </div>
+                <div class="coveBrack"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div style="padding: 20px; text-align: center ; font-size: 12px;">
+                <h1>OPEN ERP</h1>
+                <p>
+                    Par l'intégration de solutions logicielles open source, ICCSOFT propose aux Entreprises un logiciel qui permet de gérer l'ensemble de leurs processus opérationnels en supervisant l'ensemble des fonctions de l'entreprise              
+              </p>
+                <button class="btn_card" (click)="openDialogERP()">En savoir plus</button>
+            </div>
+            <div class="cover">
+                <div class="coverFront">
+                    <div>  
+                        <h2>Intégration Logicielle </h2>
+                        <img src="../../../assets/Images/openerp-1.jpg" class="ssh_image" alt="">
+                    </div>
+                    <mat-icon><span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined">
+                            preview
+                            </span>
+                        </span></mat-icon>
+                </div>
+               
+                <div class="coveBrack"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div style="padding: 20px; text-align: center ; font-size: 12px;">
+                <h1>Ingénieurie Web</h1>
+                <p>
+                    ICCSOFT offre une gamme complète de services web adaptée à vos besoins. La conception et la réalisation des sites Web, le développement des Applications, etc...
+                </p>
+                <button class="btn_card" (click)="openDialogWeb()">En savoir plus</button>
+            </div>
+            <div class="cover">
+                <div class="coverFront">
+                    <div>  
+                        <h2>Ingénieurie Web</h2>
+                        <img src="../../../assets/Images/web.jfif" class="ssh_image" alt="">
+                        <mat-icon><span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined">
+                                preview
+                                </span>
+                            </span></mat-icon>
+                    </div>
+                </div>
+                <div class="coveBrack"></div>
+            </div>
+        </div>
+    </div><br>
+    <mat-divider></mat-divider><br>
+    <div class="valeurs" id="valeurs">
+        <div class="header">
+            <h1>
+                <mat-icon><span class="material-symbols-outlined">
+                    arrow_forward
+                    </span></mat-icon>Nos valeurs...
+            </h1>
+        </div>
+        <div class="box-one">
+            <img src="../../../assets/Images/fr-france-555x312-shutterstock_692983039.webp" alt="">
+            <h1><mat-icon><span class="material-symbols-outlined">
+                help
+                </span></mat-icon>L'ecoute</h1>
+            <p>
+                L’écoute de nos clients est essentielle dans notre stratégie de  gestion « orientée client ». Les besoins de nos clients sont au quotidien déterminés, convertis en exigences et respectés afin d’obtenir leur satisfaction. Pour s’assurer de cette adéquation, nous rencontrons très souvent nos clients afin de recueillir leurs sollicitations. En plus de ces rencontres, des enquêtes sont régulièrement menées auprès de nos clients pour connaitre leur niveau de satisfaction et leur suggestion de nature à améliorer nos services
+            </p>
+        </div>
+
+        <div class="box-one">
+            <img src="../../../assets/Images/Afrique-innovation.jpg" alt="">
+            <h1><mat-icon><span class="material-symbols-outlined">
+                bolt
+                </span></mat-icon>L’innovation </h1>
+            <p>
+                Grâce aux technologies de pointe, nous concevons et mettons en œuvre des solutions innovantes pour aider nos clients à accroitre leur performance.
+                Dans le cadre de cette démarche perpétuelle et constante, nous avons mis sur le marché la version Web de notre logiciel ELOGE BANK et d’autres nouveaux modules.
+                Le SMS Banking, le e-Banking, le Gab. Ces nouveaux modules sont évidemment associés aux technologies les plus efficientes et les plus sûres qu’offre le monde technologique actuel
+            </p>
+        </div>
+
+        <div class="box-one">
+            <img src="../../../assets/Images/picture-le-role-du-service-qualite.jpg" style="width: 372px;" alt="">
+            <h1><mat-icon><span class="material-symbols-outlined">
+                grade
+                </span></mat-icon>Qualité de service  </h1>
+            <p>
+                Nous mobilisons tout notre personnel autour du client, et notre management évolue vers la prise en compte permanente des impératifs de qualité de services.
+                Le développement d’une démarche autour du Customer Relationship Management nous permet d’atteindre cet objectif.
+                De plus nous suivons actuellement un programme préparatoire à l’obtention de la certification qualité ISO 9001.
+                Notre pari de la qualité de service passe par le respect strict des délais d’exécution et d’intervention (95% de nos interventions de maintenance se font dans les 48h)
+
+            </p>
+        </div>
+        <br>
+    </div>
+    <mat-divider></mat-divider><br>
+    <div class="parttner" id="parttner">
+        <div class="header-pattner">
+            <h1>
+                <mat-icon><span class="material-symbols-outlined">
+                    arrow_forward
+                    </span></mat-icon>Pays clients de nos produits...
+                </h1>
+        </div>
+        <div class="content-partner">
+            <div class="item">
+                <img src="../../../assets/Images/pays/cameroon.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="../../../assets/Images/pays/gabon.webp" alt="">
+            </div>
+            <div class="item">
+                <img src="../../../assets/Images/pays/tchad.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="../../../assets/Images/pays/congo.webp" alt="">
+            </div>
+            <div class="item">
+                <img src="../../../assets/Images/pays/centrafrik.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="../../../assets/Images/pays/rdc.webp" alt="">
+            </div>
+            <div class="item">
+                <img src="../../../assets/Images/pays/benin.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <!-- <div class="tech" id="tech">
+        <div class="header-tech">
+            <h1>Nos technologies</h1>
+        </div>
+        <div class="all-card">
+            <div class="tech-card">
+                <div class="header-card"> </div>
+                <div class="card-image">
+                    <img src="../../../assets/Images/apache.jfif" alt="">
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="header-card"></div>
+                <div class="card-image">
+                    <img src="../../../assets/Images/oracle-database.jpg.imgw.720.720.jpg" alt="">
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="header-card"></div>
+                <div class="card-image">
+                    <img src="../../../assets/Images/dev.jfif" alt="">
+                </div>
+             </div>
+        </div>
+    </div> -->
+    <mat-divider></mat-divider><br>
+    <div class="contact" id="contact">
+        <div class="header-contact">
+            <h1>
+               <mat-icon><span class="material-symbols-outlined">
+                arrow_forward
+                </span></mat-icon> Contact...
+            </h1>
+        </div>
+        <div class="contact-content">
+            <!-- <h1>Contactez nous</h1> -->
+            <div class="row">
+                <div class="contact-image">
+                    <img src="../../../assets/Images/contact-us.jpg.crdownload" alt="">
+                    <div class="tel"><h1><strong>(+237) 22 03 22 97</strong></h1></div>
+                    <div class="tel1"><h1><strong>(+237) 22 21 18 17</strong></h1></div>
+                    <div class="tel2"><h1><strong>no-reply@iccsoft.biz</strong></h1></div>
+                </div>
+                    <form class="form">
+                        <div class="mb-3">
+                            <label for="Entrer une adresse email" class="form-label">Entrer une adresse email</label>
+                            <input type="email" class="form-control"  placeholder="name@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="Description" class="form-label">Description</label>
+                            <textarea class="form-control" placeholder="Votre description sur un besoin particulier" rows="3"></textarea>
+                          </div>
+                          <button class="btn">Envoyer</button>
+                          <br><br>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="map" id="map">
+        <!-- <p-toast [style]="{marginTop: '80px'}"></p-toast> -->
+<!-- 
+<p-gmap #gmap [style]="{'width':'100%','height':'320px', 'margin-bottom': '1em'}" [options]="options" [overlays]="overlays"
+       (onMapClick)="handleMapClick($event)" (onOverlayClick)="handleOverlayClick($event)" (onOverlayDragEnd)="handleDragEnd($event)"></p-gmap>
+
+<button type="button" pButton label="Clear" icon="pi pi-times" (click)="clear()" style="margin-right:.25em"></button>
+<button type="button" pButton label="Zoom In" icon="pi pi-plus" (click)="zoomIn(gmap.getMap())" style="margin-right:.25em"></button>
+<button type="button" pButton label="Zoom Out" icon="pi pi-minus" (click)="zoomOut(gmap.getMap())"></button>
+
+<p-dialog showEffect="fade" [(visible)]="dialogVisible" header="New Location" [style]="{width: '300px'}">>
+    <div class="grid p-fluid" *ngIf="selectedPosition">
+        <div class="col-2"><label for="title">Label</label></div>
+        <div class="col-10"><input type="text" pInputText id="title" [(ngModel)]="markerTitle"></div>
+
+        <div class="col-2"><label for="lat">Lat</label></div>
+        <div class="col-10"><input id="lat" type="text" readonly pInputText [ngModel]="selectedPosition.lat()"></div>
+
+        <div class="col-2"><label for="lng">Lng</label></div>
+        <div class="col-10"><input id="lng" type="text" readonly pInputText [ngModel]="selectedPosition.lng()"></div>
+
+        <div class="col-2"><label for="drg">Drag</label></div>
+        <div class="col-10"><p-checkbox [(ngModel)]="draggable" [binary]="true" [style]="{'margin-top':'.25em'}"></p-checkbox></div>
+    </div>
+    <ng-template pTemplate="footer">
+        <div>
+            <button type="button" pButton label="Add Marker" icon="pi-plus" (click)="addMarker()"></button>
+        </div>
+    </ng-template>
+</p-dialog> -->
+    </div>
+    <footer class="footer">
+        <h2>Iccsoft©2022</h2>
+    </footer>
+</div>
+
